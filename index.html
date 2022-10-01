@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon/normal2.png"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./styles/styles.css">
@@ -13,12 +14,15 @@
 <body>
   
   <nav>
-      <h2>Almansa</h2>
+      <h2 id="logo">Almansa</h2>
+      <h2 id="logo-responsive">Al</h2>
       <div>
           <h4>Inicio</h4>
           <h4>Menu</h4>
-          <h4>Maps</h4>
-          <h4>Contactos</h4>
+          <!-- <h4>Maps</h4> -->
+          <a href="tel:+XXXXXXXXX"><i class="fa-solid fa-phone" id="whats"></i></a>
+          <!-- <h4>Contactos</h4> -->
+          <a href="https://wa.me/1XXXXXXXXXX/?text=Hola%20buenas%20tardes,%20le%20gustaria%20ver%20nuestro%20menu"><i class="fa-brands fa-whatsapp" id="whats"></i></a>
       </div>
   </nav>
 
@@ -28,27 +32,15 @@
       <div id="slider-wrap">
         <ul id="slider">
           <li>
-            <div>
-              <!-- <h3>Slide #1</h3>
-              <span>Sub-title #1</span> -->
-            </div>
-            <img src="./img/bar_restaurante.jpg" alt="" class="fa fa-image">
+            <img src="./img/slider/bar_restaurante.jpg" alt="" class="fa fa-image">
           </li>
     
           <li>
-            <div>
-              <!-- <h3>Slide #2</h3>
-              <span>Sub-title #2</span> -->
-            </div>
-            <img src="./img/bar_restaurante_2.jpg" alt="" class="fa fa-image">
+            <img src="./img/slider/bar_restaurante_2.jpg" alt="" class="fa fa-image">
           </li>
     
           <li>
-            <div>
-              <!-- <h3>Slide #3</h3>
-              <span>Sub-title #3</span> -->
-            </div>
-            <img src="./img/bar_restaurante_3.jpg" alt="" class="fa fa-image">
+            <img src="./img/slider/bar_restaurante_3.jpg" alt="" class="fa fa-image">
           </li>
     
         </ul>
@@ -56,12 +48,6 @@
         <!--controls-->
         <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
         <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-        <div id="counter"></div>
-    
-        <div id="pagination-wrap">
-          <ul>
-          </ul>
-        </div>
     
       </div>
 
@@ -70,11 +56,13 @@
     <div class="sections">
       
       <div class="sec">
-          <img src="" alt="">
-          <p>Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños
-            placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la
-            buena música.
-            </p>
+        <div class="sec-div-img especial">
+          <img src="./img/secciones/sec1.jpg" alt="">
+        </div>
+        <p>Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños
+          placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la
+          buena música.
+          </p>
       </div>
       
       <div class="sec">
@@ -82,38 +70,60 @@
             La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la
             carta es el pan de receta patentada y que además se hornea en el momento en el
             que el cliente hace el pedido</p>
-          <img src="" alt="">
+          <div class="sec-div-img">
+            <img src="./img/secciones/sec2.jpg" alt="">
+          </div>
       </div>
       
       <div class="sec">
-        <img src="" alt="">
+        <div class="sec-div-img">
+          <img src="./img/secciones/sec3.jpg" alt="">
+        </div>
         <div>
-          <h3>Menu</h3>
+          <h2>Menu</h2>
+          <br>
           <p>Para ver todas las posibilidades de nuestro restaurante puedes descargar nuestro menu clicando en el boton de abajo.</p>
-          <button>Ver menu</button>
+          <br>
+          <br>
+          <p>
+            <a href="./img/menu/Menu_Restaurante_Almansa.pdf" target="_blank" id="menu" class="active">Ver menu</a>
+          </p>
         </div>
       </div>
 
       <div class="sec">
         <div>
-          <h3>Horario</h3>
+          <h2>Horario</h2>
+          <br>
           <p>Abrimos de martes a domingo</p>
           <p>Lunes cerrado</p>
         </div>
-        <img src="" alt="">
+        <div class="sec-div-img">
+          <img src="./img/secciones/sec4.jpg" alt="">
+        </div>
       </div>
 
       <div class="sec">
-        <img src="" alt="">
+        <div class="sec-div-img">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6212.962972767245!2d-1.1033660410146744!3d38.867224514594575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614f02fbb82577%3A0x2809cffe6e444dbf!2zTWVzw7NuIGRlIFBpbmNlbMOtbg!5e0!3m2!1sca!2ses!4v1664474734996!5m2!1sca!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div>
-          <h3>Localización</h3>
+          <h2>Localización</h2>
+          <br>
           <p>Carrer del Bosc, 08521 Bellavista, Barcelona</p>
         </div>
       </div>
 
       <div class="destacados">
-        <h3>Platos estrella</h3>
-        <img src="" alt="">
+        <h2>Platos estrella</h2>
+        <br>
+        <div class="galeria">
+          <img src="./img/platos/plat1.jpg" alt="">
+          <img src="./img/platos/plat2.jpg" alt="">
+          <img src="./img/platos/plat3.jpg" alt="">
+          <img src="./img/platos/plat4.jpg" alt="">
+          <img src="./img/platos/plat5.jpg" alt="">
+        </div>
       </div>
         
     </div>
